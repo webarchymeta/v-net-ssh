@@ -1,0 +1,18 @@
+{
+  "name": "1-net-ssh",
+  "version": "0.5.0",
+  "description": "A ssh client that is integrated with 1-NET.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuqian Ying",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "node-ipc": "^8.9.2",
+    "prompt": "^1.0.0",
+    "socksv5": "0.0.6",
+    "ssh2": "^0.5.4"
+  }
+}
