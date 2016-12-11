@@ -4,6 +4,7 @@ const
     path = require('path'),
     os = require('os'),
     colors = require('colors'),
+    readline = require('readline'),
     app_register = require(__dirname + '/lib/app-register'),
     local_shell = require(__dirname + '/lib/local-shell');
 
@@ -32,7 +33,7 @@ console.log(colors.cyan(`*******************************************************
 
 process.on('uncaughtException', function(err) {
     console.log(err);
-    require('readline').createInterface(process.stdin, process.stdout).question("Press [Enter] to exit...", () => {
+    readline.createInterface(process.stdin, process.stdout).question("Press [Enter] to exit...", () => {
         process.exit();
     });
 })
