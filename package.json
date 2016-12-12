@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.1.2",
+    "console.table": "^0.7.0",
     "node-ipc": "^8.9.2",
     "prompt": "^1.0.0",
     "socksv5": "0.0.6",

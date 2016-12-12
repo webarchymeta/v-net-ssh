@@ -33,9 +33,11 @@ console.log(colors.cyan(`*******************************************************
 
 process.on('uncaughtException', function(err) {
     console.log(err);
+    process.exit();
+    /*
     readline.createInterface(process.stdin, process.stdout).question("Press [Enter] to exit...", () => {
-        process.exit();
     });
+    */
 })
 
 local_shell.start();
