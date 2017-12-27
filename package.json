@@ -1,19 +1,19 @@
 {
-  "name": "1-net-ssh",
-  "version": "0.5.0",
-  "description": "A ssh client that is integrated with 1-NET.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Shuqian Ying",
-  "license": "MIT",
-  "dependencies": {
-    "colors": "^1.1.2",
-    "console.table": "^0.7.0",
-    "node-ipc": "^8.9.2",
-    "prompt": "^1.0.0",
-    "socksv5": "0.0.6",
-    "ssh2": "^0.5.4"
-  }
+    "name": "1-net-ssh",
+    "version": "0.5.0",
+    "description": "1-NET ssh client that can access remote machine through 1-NET gateways connecting two remote LANs.",
+    "main": "index.js",
+    "scripts": {
+        "register": "node . --register"
+    },
+    "author": "Shuqian Ying",
+    "license": "MIT",
+    "dependencies": {
+        "colors": "^1.1.2",
+        "console.table": "^0.7.0",
+        "node-ipc": "^8.9.2",
+        "prompt": "^1.0.0",
+        "socksv5": "0.0.6",
+        "ssh2": "^0.5.4"
+    }
 }

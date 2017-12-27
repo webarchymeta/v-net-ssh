@@ -10,13 +10,21 @@ const
 
 process.stdout.columns = 120;
 
-app_register.regist();
+app_register.regist().then((run) => {
+    if (!run) {
+        console.log('OK, the current app is registered with 1-NET client. It can be launched there. Have a good day!');
+        setTimeout(() => {
+            process.exit(0);
+        }, 500);
+        console.log()
+        return;
+    }
 
-process.on('SIGINT', function() {
-    process.exit();
-});
+    process.on('SIGINT', function() {
+        process.exit(0);
+    });
 
-console.log(colors.cyan(`************************************************************************************************************
+    console.log(colors.cyan(`************************************************************************************************************
 
                 Welcome to 1-NET ssh client
                 
@@ -31,13 +39,10 @@ console.log(colors.cyan(`*******************************************************
 
 `));
 
-process.on('uncaughtException', function(err) {
-    console.log(err);
-    process.exit();
-    /*
-    readline.createInterface(process.stdin, process.stdout).question("Press [Enter] to exit...", () => {
-    });
-    */
-})
+    process.on('uncaughtException', function(err) {
+        console.log(err);
+        process.exit(1);
+    })
 
-local_shell.start();
+    local_shell.start();
+});
