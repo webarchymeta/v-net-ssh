@@ -5,10 +5,17 @@ const
     os = require('os'),
     chalk = require('chalk'),
     readline = require('readline'),
-    app_register = require(__dirname + '/lib/app-register'),
-    local_shell = require(__dirname + '/lib/local-shell');
+    app_register = require('./lib/app-register'),
+    local_shell = require('./lib/local-shell');
 
 process.stdout.columns = 220;
+
+if (process.argv[0].match(/v-net-ssh(\.\w+)?$/ui)) {
+    const cdir = path.dirname(process.execPath);
+    if (process.cwd() !== cdir) {
+        process.chdir(cdir);
+    }
+}
 
 app_register.regist().then(run => {
     if (!run) {
@@ -35,7 +42,7 @@ app_register.regist().then(run => {
                 Current Time: ${(new Date()).toLocaleString()}
 
 ************************************************************************************************************
-` + chalk.gray.bold('Please specify the following parameters:') + `
+` + chalk.gray.hex('#aaaaaa')('Please specify the following parameters:') + `
 
 `));
 

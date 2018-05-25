@@ -13,7 +13,9 @@
         "console.table": "^0.7.0",
         "node-ipc": "^9.1.1",
         "prompt": "^1.0.0",
+        "request": "^2.87.0",
         "socks5-client": "git+https://github.com/webarchymeta/socks5-client.git",
         "ssh2": "^0.6.1"
-    }
+    },
+    "pkg": {}
 }
