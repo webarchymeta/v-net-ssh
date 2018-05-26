@@ -7,11 +7,12 @@ A trans- local area network windows (trans-LAN) ssh client.
 
 ### Prerequisites
 
-Install latest LTS version of `nodejs`.
+Install latest LTS version of `nodejs` and `git` version control system (see, e.g. [here](https://git-scm.com/)).
 
 ### Run
 
-To run this code, follow these steps:
+To run this code, follow these steps in a console where `git` is available (since the version of the present project depends on
+some packages that are retrieved from [github](https://github.com)):
 
 ```
 git clone https://github.com/webarchymeta/v-net-ssh
