@@ -37,8 +37,8 @@ app_register.regist().then(run => {
                 
                 Current Host: ${os.hostname()}
                 Host Type: ${os.type()}
-                Target Gateway: (${process.env.CONTEXT_TITLE ? process.env.CONTEXT_TITLE : 'Unknown' })
-                SOCKS: (host: ${process.env.SOCKS5_ADDRESS ? process.env.SOCKS5_ADDRESS : 'Unknown' }, port: ${process.env.SOCKS5_PORT ? process.env.SOCKS5_PORT : 'Unknown' })
+                Target Gateway: ${!process.env.LOCAL_LAN && process.env.CONTEXT_TITLE ? process.env.CONTEXT_TITLE : 'Unknown' }
+                SOCKS: (host: ${!process.env.LOCAL_LAN && process.env.SOCKS5_ADDRESS ? process.env.SOCKS5_ADDRESS : 'Undefined' }, port: ${!process.env.LOCAL_LAN && process.env.SOCKS5_PORT ? process.env.SOCKS5_PORT : 'Undefined' })
                 Current Time: ${(new Date()).toLocaleString()}
 
 ************************************************************************************************************
