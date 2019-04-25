@@ -11,12 +11,12 @@
     "dependencies": {
         "brace-expansion": "^1.1.11",
         "chalk": "^2.4.2",
-        "console.table": "^0.7.0",
+        "console.table": "^0.10.0",
         "node-ipc": "^9.1.1",
         "prompt": "^1.0.0",
         "request": "^2.88.0",
         "socks5-client": "git+https://github.com/webarchymeta/socks5-client.git",
-        "ssh2": "^0.6.2"
+        "ssh2": "^0.8.2"
     },
     "pkg": {}
 }
