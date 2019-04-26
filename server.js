@@ -3,7 +3,6 @@
 const
     path = require('path'),
     os = require('os'),
-    tty = require('tty'),
     chalk = require('chalk'),
     local_shell = require('./lib/local-shell');
 
@@ -30,7 +29,7 @@ console.log(chalk.yellow(`******************************************************
                 Color: ${process.stdout.getColorDepth()} bits
 
 ************************************************************************************************************
-` + chalk.gray.hex('#aaaaaa')('Please specify the following parameters:') + `
+` + chalk.gray.hex('#aaaaaa')(process.env.LOGIN_NOTIFY || 'Please specify the following parameters:') + `
 
 `));
 
