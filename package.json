@@ -10,13 +10,13 @@
     "license": "MIT",
     "dependencies": {
         "brace-expansion": "^2.0.1",
-        "chalk": "^4.1.1",
+        "chalk": "^4.1.2",
         "console.table": "^0.10.0",
-        "node-ipc": "^9.1.4",
-        "prompt": "^1.1.0",
+        "node-ipc": "^10.1.0",
+        "prompt": "^1.2.0",
         "request": "^2.88.2",
         "socks5-client": "git+https://github.com/webarchymeta/socks5-client.git",
-        "ssh2": "^0.8.9"
+        "ssh2": "^1.4.0"
     },
     "pkg": {}
 }
